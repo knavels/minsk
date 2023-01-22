@@ -7,4 +7,4 @@ slndir="$(dirname "${BASH_SOURCE[0]}")/src"
 dotnet build "$slndir/msc" --nologo || exit
 
 # Run
-dotnet run -p "$slndir/msc" --no-build -- "$@"
+dotnet run --project "$slndir/msc" --no-build -- "$@"
